@@ -17,7 +17,7 @@ app.use(cors({
 // res.setHeader('Access-Control-Allow-Credentials','true')
 // res.setHeader('Access-Control-Allow-Headers','Content-type')
 
-app.post('/',(req,res)=>{
+app.post('/',(req,res)=>{ 
     console.log(req.body)
     res.setHeader('Set-cookie','name=ingoo; Domain=localhost;')
     res.send('123123')
